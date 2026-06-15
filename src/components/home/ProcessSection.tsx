@@ -41,16 +41,16 @@ export default function ProcessSection() {
               style={{ top: rocketY }}
               className="absolute left-1/2 z-30 -translate-x-1/2 -mt-6"
             >
-              <div className="relative flex justify-center items-center w-[48px] h-[64px]">
+              <div className="relative flex justify-center items-center w-[96px] h-[128px]">
                 {/* Thruster glow */}
                 <motion.div 
                   animate={{ scaleX: [1, 1.3, 1], opacity: [0.2, 0.4, 0.2] }}
                   transition={{ duration: 0.8, repeat: Infinity, ease: "easeInOut" }}
-                  className="absolute -top-4 left-1/2 -translate-x-1/2 rounded-full pointer-events-none" 
-                  style={{ width: 32, height: 22, background: 'radial-gradient(rgba(139, 92, 246, 0.8) 0%, transparent 70%)' }}
+                  className="absolute -top-8 left-1/2 -translate-x-1/2 rounded-full pointer-events-none" 
+                  style={{ width: 64, height: 44, background: 'radial-gradient(rgba(139, 92, 246, 0.8) 0%, transparent 70%)' }}
                 />
                 
-                <svg width="40" height="60" viewBox="0 0 40 60" fill="none">
+                <svg width="80" height="120" viewBox="0 0 40 60" fill="none">
                   {/* Flames */}
                   <motion.g 
                     animate={{ scaleY: [0.8, 1.1, 0.8] }}
