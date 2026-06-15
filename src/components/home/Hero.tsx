@@ -8,7 +8,7 @@ import { fadeInUp, staggerContainer, staggerItem } from '@/lib/animations';
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen bg-background flex flex-col items-center justify-center overflow-hidden">
+    <section className="relative min-h-screen pt-24 md:pt-28 bg-background flex flex-col items-center justify-center overflow-hidden">
       {/* Background Effects */}
       <StarField />
 
