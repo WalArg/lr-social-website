@@ -92,21 +92,20 @@ export default function Hero() {
         {/* Heading */}
         <motion.h1
           variants={staggerItem}
-          className="text-6xl sm:text-7xl md:text-8xl lg:text-[10rem] font-black tracking-tight leading-[0.95]"
+          className="text-6xl md:text-7xl lg:text-[7rem] font-black tracking-tight leading-[0.95] text-white"
         >
-          Hacemos crecer
+          Hacemos
           <br />
-          <span className="text-gradient">tu marca.</span>
+          crecer tu <span className="text-gradient italic pr-4">marca.</span>
         </motion.h1>
 
         {/* Subtitle */}
         <motion.p
           variants={staggerItem}
-          className="mt-8 text-xl md:text-3xl text-white/50 max-w-4xl mx-auto leading-relaxed"
+          className="mt-8 text-white/50 text-xl md:text-2xl max-w-2xl mx-auto leading-relaxed"
         >
-          Social Media Management · Contenido · Estrategia Digital.
-          <br className="hidden md:block" />
-          Transformamos tus redes en herramientas reales de venta.
+          Estrategia, contenido y gestión de redes sociales para empresas y emprendedores
+          que buscan resultados reales.
         </motion.p>
 
         {/* CTAs */}
@@ -118,14 +117,14 @@ export default function Hero() {
             href={COMPANY.whatsapp}
             target="_blank"
             rel="noopener noreferrer"
-            className="group px-12 py-5 rounded-xl bg-primary text-white font-bold text-2xl hover:bg-primary-dark transition-all duration-300 hover:shadow-[0_0_30px_rgba(139,92,246,0.5)] flex items-center gap-3"
+            className="group px-8 py-4 rounded-xl bg-primary text-white font-bold text-lg hover:bg-primary-dark transition-all duration-300 hover:shadow-[0_0_30px_rgba(139,92,246,0.5)] flex items-center gap-2"
           >
             Empezá tu proyecto
             <span className="group-hover:translate-x-1 transition-transform">→</span>
           </a>
           <Link
             href="/servicios"
-            className="px-12 py-5 rounded-xl border border-white/15 text-white/70 font-semibold text-2xl hover:text-white hover:border-white/30 hover:bg-white/5 transition-all duration-300"
+            className="px-8 py-4 rounded-xl border border-white/15 text-white/70 font-semibold text-lg hover:text-white hover:border-white/30 hover:bg-white/5 transition-all duration-300"
           >
             Conocé nuestros servicios
           </Link>

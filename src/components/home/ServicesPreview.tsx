@@ -40,12 +40,12 @@ export default function ServicesPreview() {
                   </div>
 
                   {/* Title */}
-                  <h3 className="text-3xl font-bold text-white mb-6 group-hover:text-primary transition-colors duration-300">
+                  <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-primary transition-colors duration-300">
                     {service.title}
                   </h3>
 
                   {/* Description */}
-                  <p className="text-white/50 text-xl leading-relaxed mb-8">
+                  <p className="text-white/50 text-base leading-relaxed mb-6">
                     {service.description}
                   </p>
 
@@ -54,16 +54,16 @@ export default function ServicesPreview() {
                     {service.features.slice(0, 3).map((feature, j) => (
                       <li
                         key={j}
-                        className="flex items-center gap-4 text-lg text-white/40 group-hover:text-white/60 transition-colors"
+                        className="flex items-center gap-3 text-sm text-white/40 group-hover:text-white/60 transition-colors"
                       >
-                        <span className="w-2 h-2 rounded-full bg-primary/50" />
+                        <span className="w-1.5 h-1.5 rounded-full bg-primary/50" />
                         {feature}
                       </li>
                     ))}
                   </ul>
 
                   {/* Arrow */}
-                  <div className="mt-8 flex items-center gap-3 text-primary/60 group-hover:text-primary text-xl font-bold transition-colors">
+                  <div className="mt-6 flex items-center gap-2 text-primary/60 group-hover:text-primary text-base font-semibold transition-colors">
                     Ver más
                     <span className="group-hover:translate-x-2 transition-transform duration-300">→</span>
                   </div>
@@ -76,11 +76,11 @@ export default function ServicesPreview() {
         {/* Global CTA below the grid */}
         <motion.div
           variants={staggerItem}
-          className="mt-16 text-center"
+          className="mt-12 text-center"
         >
           <Link
             href="/servicios"
-            className="inline-flex items-center gap-3 px-12 py-5 rounded-xl border border-white/10 text-white/70 font-bold text-2xl hover:text-white hover:border-white/30 hover:bg-white/5 transition-all duration-300 group"
+            className="inline-flex items-center gap-2 px-8 py-4 rounded-xl border border-white/10 text-white/70 font-semibold text-lg hover:text-white hover:border-white/30 hover:bg-white/5 transition-all duration-300 group"
           >
             Ver todos los servicios
             <span className="group-hover:translate-x-1 transition-transform">→</span>

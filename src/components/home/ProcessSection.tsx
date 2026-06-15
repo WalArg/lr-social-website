@@ -97,23 +97,23 @@ export default function ProcessSection() {
             <motion.div
               key={i}
               variants={staggerItem}
-              className={`relative flex flex-col md:flex-row items-start gap-6 md:gap-16 mb-24 last:mb-0 ${
+              className={`relative flex flex-col md:flex-row items-start gap-6 md:gap-12 mb-16 last:mb-0 ${
                 i % 2 === 1 ? 'md:flex-row-reverse' : ''
               }`}
             >
               {/* Number Circle */}
-              <div className="absolute left-6 md:left-1/2 -translate-x-1/2 w-16 h-16 rounded-full bg-background border-4 border-primary flex items-center justify-center z-10 shadow-[0_0_20px_rgba(139,92,246,0.5)]">
-                <span className="text-primary font-black text-2xl">{step.number}</span>
+              <div className="absolute left-6 md:left-1/2 -translate-x-1/2 w-12 h-12 rounded-full bg-background border-2 border-primary/50 flex items-center justify-center z-10 shadow-[0_0_15px_rgba(139,92,246,0.3)]">
+                <span className="text-primary font-bold text-lg">{step.number}</span>
               </div>
 
               {/* Content */}
-              <div className={`ml-32 md:ml-0 md:w-[calc(50%-5rem)] glass-card p-10 hover:border-primary/50 transition-colors ${i % 2 === 1 ? 'md:text-right' : ''}`}>
-                <h3 className="text-4xl md:text-5xl font-black text-white mb-6">{step.title}</h3>
-                <p className="text-white/60 text-xl md:text-2xl leading-relaxed">{step.description}</p>
+              <div className={`ml-24 md:ml-0 md:w-[calc(50%-4rem)] glass-card p-8 hover:border-primary/50 transition-colors ${i % 2 === 1 ? 'md:text-right' : ''}`}>
+                <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">{step.title}</h3>
+                <p className="text-white/60 text-base md:text-lg leading-relaxed">{step.description}</p>
               </div>
 
               {/* Spacer */}
-              <div className="hidden md:block md:w-[calc(50%-5rem)]" />
+              <div className="hidden md:block md:w-[calc(50%-4rem)]" />
             </motion.div>
           ))}
         </motion.div>

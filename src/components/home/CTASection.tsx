@@ -31,20 +31,19 @@ export default function CTASection() {
         {/* Heading */}
         <motion.h2
           variants={staggerItem}
-          className="text-5xl md:text-7xl lg:text-9xl font-black tracking-tight leading-[1]"
+          className="text-5xl md:text-6xl lg:text-[6rem] font-black tracking-tight leading-[0.95] mb-8"
         >
-          Empezá
+          ¿Listo para dar el
           <br />
-          <span className="text-gradient">algo grande.</span>
+          <span className="text-gradient italic">siguiente paso?</span>
         </motion.h2>
 
         {/* Subtitle */}
         <motion.p
           variants={staggerItem}
-          className="mt-8 text-white/50 text-2xl max-w-3xl mx-auto"
+          className="text-white/50 text-xl max-w-2xl mx-auto mb-12"
         >
-          No publicamos por publicar. Trabajamos para que tu marca crezca de verdad.
-          Escribinos y empecemos juntos.
+          Escribinos y contanos sobre tu proyecto. Te armamos una propuesta a medida sin compromiso.
         </motion.p>
 
         {/* CTA Buttons */}
@@ -56,7 +55,7 @@ export default function CTASection() {
             href={COMPANY.whatsapp}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-3 px-14 py-6 rounded-2xl bg-primary text-white font-bold text-3xl hover:bg-primary-dark transition-all duration-300 hover:shadow-[0_0_40px_rgba(139,92,246,0.5)] group"
+            className="inline-flex items-center gap-2 px-10 py-5 rounded-2xl bg-primary text-white font-bold text-xl hover:bg-primary-dark transition-all duration-300 hover:shadow-[0_0_40px_rgba(139,92,246,0.5)] group"
           >
             Escribinos
             <span className="group-hover:translate-x-2 transition-transform">→</span>

@@ -56,7 +56,7 @@ export default function Navbar() {
             <Link
               key={link.href}
               href={link.href}
-              className={`px-5 py-3 rounded-lg text-xl font-medium transition-all duration-200 ${
+              className={`px-4 py-2 rounded-lg text-base font-medium transition-all duration-200 ${
                 pathname === link.href
                   ? 'text-primary bg-primary/10'
                   : 'text-white/60 hover:text-white hover:bg-white/5'
@@ -73,7 +73,7 @@ export default function Navbar() {
             href={COMPANY.whatsapp}
             target="_blank"
             rel="noopener noreferrer"
-            className="px-8 py-4 rounded-xl bg-primary text-white text-xl font-bold hover:bg-primary-dark transition-all duration-300 hover:shadow-[0_0_20px_rgba(139,92,246,0.4)]"
+            className="px-6 py-3 rounded-xl bg-primary text-white text-base font-bold hover:bg-primary-dark transition-all duration-300 hover:shadow-[0_0_20px_rgba(139,92,246,0.4)]"
           >
             Empezá tu proyecto
           </a>

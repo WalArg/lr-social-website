@@ -16,15 +16,15 @@ export default function Footer() {
     <footer ref={ref} className="relative bg-surface border-t border-surface-border/50">
       {/* Top CTA Bar */}
       <div className="border-b border-surface-border/30">
-        <div className="w-full px-6 md:px-12 lg:px-20 mx-auto py-12 flex flex-col md:flex-row items-center justify-between gap-6">
-          <p className="text-white/60 text-2xl">
+        <div className="w-full px-6 md:px-12 lg:px-20 mx-auto py-10 flex flex-col md:flex-row items-center justify-between gap-6">
+          <p className="text-white/60 text-lg">
             ¿Listo para hacer crecer tu marca?
           </p>
           <a
             href={COMPANY.whatsapp}
             target="_blank"
             rel="noopener noreferrer"
-            className="px-10 py-5 rounded-xl bg-primary text-white font-bold text-xl hover:bg-primary-dark transition-all duration-300 hover:shadow-[0_0_20px_rgba(139,92,246,0.4)]"
+            className="px-8 py-4 rounded-xl bg-primary text-white font-bold text-base hover:bg-primary-dark transition-all duration-300 hover:shadow-[0_0_20px_rgba(139,92,246,0.4)]"
           >
             Escribinos →
           </a>
@@ -54,7 +54,7 @@ export default function Footer() {
                 SOCIAL MEDIA AND CONTENT
               </span>
             </div>
-            <p className="text-white/50 text-xl leading-relaxed mb-10">
+            <p className="text-white/50 text-base leading-relaxed mb-8">
               Agencia de marketing digital especializada en redes sociales. Transformamos tu presencia digital con estrategia, contenido y resultados reales.
             </p>
             <div className="flex gap-3">
@@ -88,40 +88,40 @@ export default function Footer() {
 
           {/* Services */}
           <motion.div variants={staggerItem}>
-            <h4 className="text-white font-bold text-2xl mb-8">Servicios</h4>
-            <ul className="space-y-6">
+            <h4 className="text-white font-bold text-lg mb-6">Servicios</h4>
+            <ul className="space-y-4">
               <li>
-                <Link href="/servicios" className="text-white/50 hover:text-primary transition-colors text-xl">
+                <Link href="/servicios" className="text-white/50 hover:text-primary transition-colors text-base">
                   Social Media Management
                 </Link>
               </li>
               <li>
-                <Link href="/servicios" className="text-white/50 hover:text-primary transition-colors text-xl">
+                <Link href="/servicios" className="text-white/50 hover:text-primary transition-colors text-base">
                   Creación de Contenido
                 </Link>
               </li>
               <li>
-                <Link href="/servicios" className="text-white/50 hover:text-primary transition-colors text-xl">
+                <Link href="/servicios" className="text-white/50 hover:text-primary transition-colors text-base">
                   Publicidad Digital (Ads)
                 </Link>
               </li>
               <li>
-                <Link href="/servicios" className="text-white/50 hover:text-primary transition-colors text-xl">
+                <Link href="/servicios" className="text-white/50 hover:text-primary transition-colors text-base">
                   Estrategia Digital
                 </Link>
               </li>
             </ul>
           </motion.div>
 
-          {/* Company */}
+          {/* Navigation */}
           <motion.div variants={staggerItem}>
-            <h4 className="text-white font-bold text-2xl mb-8">Navegación</h4>
-            <ul className="space-y-6">
+            <h4 className="text-white font-bold text-lg mb-6">Navegación</h4>
+            <ul className="space-y-4">
               {NAV_LINKS.map((link) => (
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-white/50 hover:text-primary transition-colors text-xl"
+                    className="text-white/50 hover:text-primary transition-colors text-base"
                   >
                     {link.label}
                   </Link>
@@ -132,8 +132,8 @@ export default function Footer() {
 
           {/* Contact */}
           <motion.div variants={staggerItem}>
-            <h4 className="text-white font-bold text-2xl mb-8">Contacto</h4>
-            <ul className="space-y-6 text-white/50 text-xl">
+            <h4 className="text-white font-bold text-lg mb-6">Contacto</h4>
+            <ul className="space-y-4 text-white/50 text-base">
               <li>
                 <a
                   href={COMPANY.whatsapp}
@@ -169,11 +169,11 @@ export default function Footer() {
 
       {/* Bottom Bar */}
       <div className="border-t border-surface-border/30">
-        <div className="w-full px-6 md:px-12 lg:px-20 mx-auto py-10 flex flex-col md:flex-row items-center justify-between gap-6">
-          <p className="text-white/30 text-lg">
+        <div className="w-full px-6 md:px-12 lg:px-20 mx-auto py-8 flex flex-col md:flex-row items-center justify-between gap-4">
+          <p className="text-white/30 text-sm">
             © {new Date().getFullYear()} {COMPANY.name}. Todos los derechos reservados.
           </p>
-          <p className="text-white/20 text-lg">
+          <p className="text-white/20 text-sm">
             Hecho con ❤️ en Argentina.
           </p>
         </div>
